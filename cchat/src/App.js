@@ -1,15 +1,17 @@
 import './App.css';
-import socketIO from "socket.io-client"
+import join from './components/Join/join';
+import{BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 const ENDPOINT="http://localhost:5000"
-const socket=socketIO(ENDPOINT,{transports:['websocket']})
 
 function App() {
-  socket.on("connnect",()=>{
-
-  })
+  
   return (
     <div className="App">
-      <h1>working</h1>
+      <Router>
+        <Route path="/" component={join} />
+        <Route path="/chat" />
+
+      </Router>
     </div>
   );
 }
