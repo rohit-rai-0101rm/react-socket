@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+/cchat/node_modules
+/cchat/.pnp
+/cchat/.pnp.js
+
+# testing
+/cchat/coverage
+
+# production
+/cchat/build
+/cchat/node_modules
+/server/node_modules
+
+# misc
+/server/config/config.env
+/cchat/.DS_Store
+/cchat/.env.local
+/cchat/.env.development.local
+/cchat/.env.test.local
+/cchat/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
